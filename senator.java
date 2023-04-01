@@ -1,6 +1,17 @@
 import java.util.Scanner;
 
 public class Senator{
+  String name;
+  String party;
+  String state;
+  int election_class;
+  boolean is_leader;
+  String leadership;
+  boolean is_chair;
+  String chairperson;
+  String comm_assignments;
+  
+  
 
 //read file
   //identify variables in class (party, state, if leader, etc)
