@@ -11,6 +11,39 @@ public class Senator{
   String chairperson;
   String comm_assignments;
   
+  public Senator(String name, String party, String state, int election_class, boolean is_leader, String leadership, boolean is_chair, String chairperson, String comm_assignments){
+    this.name = name;
+    this.party = party;
+    this.state = state;
+    this.election_class = election_class;
+    this.is_leader = is_leader;
+    this.leadership = leadership;
+    this.is_chair = is_chair;
+    this.chairperson = chairperson;
+    this.comm_assignments = comm_assignments;
+  }
+  
+  public String getName(){
+    return name;
+  }public String getParty(){
+    return party;
+  }public String getState(){
+    return state;
+  }public int getClass(){
+    return election_class;
+  }public boolean get_is_leader(){
+    return is_leader;
+  }public String getLeadership(){
+    return leadership;
+  }public boolean get_is_chair(){
+    return is_chair;
+  }public String getChairperson(){
+    return chairperson;
+  }public String getComm_assignments(){
+    return comm_assignments;
+  }
+    
+  
   
 
 //read file
