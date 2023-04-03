@@ -22,6 +22,16 @@ static String printMenu(ArrayList<String> menu_object){
   }System.out.println();
 }
 Scanner keyboard = new Scanner(System.in);
+ArrayList<String> removed = new ArrayList<String>;
 System.out.println("Enter the number corresponding to the information you would like to know: ");
-int user_choice = keyboard.nextInt()
+int user_choice = keyboard.nextInt();
+String choice = menu.get(user_choice);
+removed.add(user_choice);
+System.out.println("Here are the names of the Senators...")
+
+
+
+menu.remove(user_choice);
+
+S
   
