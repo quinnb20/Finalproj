@@ -16,10 +16,15 @@ if(m_or_s == "S"){
   if(containsName==false){
     System.out.println("The Senator [sen_name] does not exist. Please double-check your spelling with the list of Senators found on senate.gov");
   }
-  else{  
+  else{ 
+    //Find index of senator w that name
     System.out.println("What would you like to know about [name of senator]? Please choose one option at a time");
-System.out.println(menu);
-System.out.println("Enter the number corresponding to your choice: ");
+    System.out.println(menu);
+    System.out.println("Enter the number corresponding to your choice: ");
+    
+    
+    
+    
 
   
 
