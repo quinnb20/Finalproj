@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Senator{
+public class Senator_1{
   String name;
   String party;
   String state;
@@ -8,7 +8,7 @@ public class Senator{
   boolean is_leader;
   boolean is_chair;
   
-  public Senator(String name, String party, String state, int election_class, boolean is_leader, boolean is_chair){
+  public Senator_1(String name, String party, String state, int election_class, boolean is_leader, boolean is_chair){
     this.name = name;
     this.party = party;
     this.state = state;
