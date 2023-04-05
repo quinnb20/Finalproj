@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Senator_1{
+public class Senator{
   String name;
   String party;
   String state;
@@ -8,7 +8,7 @@ public class Senator_1{
   boolean is_leader;
   boolean is_chair;
   
-  public Senator_1(String name, String party, String state, int election_class, boolean is_leader, boolean is_chair){
+  public Senator(String name, String party, String state, int election_class, boolean is_leader, boolean is_chair){
     this.name = name;
     this.party = party;
     this.state = state;
@@ -31,6 +31,15 @@ public class Senator_1{
   }public boolean get_is_chair(){
     return is_chair;
   }
+  
+  @Override public String toString(){
+    return(this.getName() + "\n Party: " +this.getParty() + "State: " +this.gerState()+"Class: " + this.getClass()+"Leader: " + this.get_is_leader()+ "Chairperson: " +this.get_is_chair());
+  }
+  class sortAlphabetically implements Comparator<Senator>{
+    public int compare(Senator a, Senator b){
+      return a.name.compareTo(b.name);
+    }
+  
     
   //create a class for assignments separately 
   
