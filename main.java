@@ -51,6 +51,12 @@ public class Main{
       String sen_name;
       System.out.println("What is the name of the senator you are searching for? ");
       sen_name = reader.nextLine();
+      boolean ans = senators.contains(sen_name);
+      if(ans){
+        System.out.println("What would you like to know about Senator %s", sen_name);
+        //print menu
+        
+        
       
 
     
