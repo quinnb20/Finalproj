@@ -54,8 +54,42 @@ public class Main{
       boolean ans = senators.contains(sen_name);
       if(ans){
         System.out.println("What would you like to know about Senator %s", sen_name);
-        //print menu
         
+        menu.remove(0);
+        
+        printMenu(menu);
+        
+        System.out.println("Enter the number corresponding to your choice: ");
+        men_choice = reader.nextInt();
+        menu.remove(men_choice);
+        
+        for(Senator member : senators){
+          ///Set each menu choice to specific number (hard code it) and use it w senator.get to retrive inf from for loop
+          ///use this setup for basically everytbibg 
+          
+   
+ArrayList<String> menu = new ArrayList<String>;
+menu.add("Name");
+menu.add("Party");
+menu.add("State");
+menu.add("Class");
+menu.add("Senate Leadership");
+menu.add("Committee Chairpeople");
+menu.add("Committee Assignments");
+
+
+
+
+//Prints menu and attaches numbers starting at 0 to use indexing to prompt response
+
+static String printMenu(ArrayList<String> menu_object){
+  String m[] = menu_object.toArray(new String[menu_object.size()]);
+  int counter = 0;
+  for(String menu_string : m){
+    String str = String.valueOf(counter);
+    System.out.println(str + ".  " + menu_string);
+    counter += 1;
+  }System.out.println();
         
       
 
