@@ -35,7 +35,8 @@ if(m_or_s == "S"){
       
       //convert user choice category to index
       
-      String retrieve_info = list[category_indx][senator_indx]
+      String retrieve_info = list[category_indx][senator_indx];
+    }}
         
       
     
