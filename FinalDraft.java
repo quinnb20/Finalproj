@@ -8,7 +8,7 @@ public class FinalDraft{
     //Reads in Senator text file
     public static ArrayList<Senator> readFile() throws Exception{
         ArrayList<Senator> senators = new ArrayList<>();
-        File sen = new File("/Users/harpercrews/Downloads/Senators1.txt");
+        File sen = new File("Senators1.txt");
         Scanner reader = new Scanner(sen);
         while(reader.hasNextLine()){
             String line = reader.nextLine();
@@ -19,7 +19,7 @@ public class FinalDraft{
         return senators;
     }public static ArrayList<Leadership> read_file() throws Exception{
         ArrayList<Leadership> leaders = new ArrayList<>();
-        File lead = new File("/Users/harpercrews/Downloads/Leadership.txt");
+        File lead = new File("Leadership.txt");
         Scanner read = new Scanner(lead);
         while(read.hasNextLine()){
             String lin = read.nextLine();
@@ -31,7 +31,7 @@ public class FinalDraft{
         return leaders;
     }public static ArrayList<Chairperson> Read_File() throws Exception{
         ArrayList<Chairperson> chairs = new ArrayList<>();
-        File chair = new File("/Users/harpercrews/Downloads/Chairmen.txt");
+        File chair = new File("Chairmen.txt");
         Scanner red = new Scanner(chair);
         while(red.hasNextLine()){
             String li = red.nextLine();
