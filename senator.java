@@ -1,6 +1,7 @@
 import java.util.Scanner;
+import java.util.Comparator;
 
-public class Senator{
+public class senator{
   String name;
   String party;
   String state;
@@ -91,4 +92,4 @@ public static void main(Strings[] args){
   }
 
 
-} 
+}}}
