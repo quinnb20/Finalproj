@@ -6,7 +6,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Main{
-    //Reads in Senator text file + makes it itno arraylist
+    //Reads in Senator text file + makes it into arraylist
+    
+    /**Reads in a file and assigns each line to be an object of the Senator class. 
+    * Populates an ArrayList with each Senator object read from file.  
+    */
     public static ArrayList<Senator> readFile() throws Exception{
         ArrayList<Senator> senators = new ArrayList<>();
         File sen = new File("/Users/harpercrews/Downloads/Senators1.txt");
@@ -19,7 +23,9 @@ public class Main{
         }reader.close();
         return senators;
 
-    //reads in leadership file + makes it into arraylist
+    /**Reads in a file and assigns each line to be an object of the Leadership class. 
+    * Populates an ArrayList with each Leadership object read from file. 
+    */
     }public static ArrayList<Leadership> read_file() throws Exception{
         ArrayList<Leadership> leaders = new ArrayList<>();
         File lead = new File("/Users/harpercrews/Downloads/Leadership.txt");
@@ -34,7 +40,9 @@ public class Main{
         }read.close();
         return leaders;
 
-    // reads in committee file + makes it into arraylist
+    /**Reads in a file and assigns each line to be an object of the Chairperson class. 
+    * Populates an ArrayList with each Chairperson object read from file. 
+    */
     }public static ArrayList<Chairperson> fileRead() throws Exception{
         ArrayList<Chairperson> chairs = new ArrayList<>();
         File chair1 = new File("/Users/harpercrews/Downloads/Chairmen.txt");
@@ -48,7 +56,8 @@ public class Main{
         }red1.close();
         return chairs;
         
-    //establishes the way the menu can reset after going through the program
+    /**Method to print an ArrayList line by line with a corresponding line number. 
+    */
     }public static void printMenu(ArrayList<String> menu_object){
         String m[] = menu_object.toArray(new String[menu_object.size()]);
         int counter = 0;
@@ -60,7 +69,8 @@ public class Main{
         
         
 
-    //creation of the menu when reseting the program
+    /**Method to re-populate the main menu ArrayList.
+    */
     }public static void resetMenu(ArrayList<String> menu_object){
         menu_object.clear();
         menu_object.add("Name");
@@ -70,7 +80,9 @@ public class Main{
         menu_object.add("Senate Leadership");
         menu_object.add("Committee Chairpeople");
     }
-
+    
+    /**Method to print any String ArrayList line by line.
+    */
     public static void printArray(ArrayList<String> array){
         String new_arr [] = array.toArray(new String[array.size()]);
         for(String array_string : new_arr){
@@ -78,7 +90,9 @@ public class Main{
 
         }
 
-    //creation of the saved information the user searches for for the user to have for safe keeping
+    /**Write's the users information into a new text file. 
+    * Takes a Senator ArrayList, Leadership ArrayList, and Chairperson ArrayList as parameters to write into the file
+    */
     }public static void writeInfo(ArrayList<Senator> sen_list, ArrayList<Leadership> lead_list, ArrayList<Chairperson> chair_list){
         try{
             FileWriter f_writer = new FileWriter("senator_info.txt");
@@ -140,8 +154,8 @@ public class Main{
             keyboard.close();
             return;
 
-        //begins the menu for user, establishes the menu that will be used once user
-        //chooses first action
+        
+        //prints welcome message + populates the main menu
         }System.out.println("Hello! Welcome to the U.S. Senate Directory.\n");
         System.out.println("");
         ArrayList<String> menu = new ArrayList<String>();
@@ -159,7 +173,7 @@ public class Main{
             String s_or_m;
             s_or_m = keyboard.nextLine();
 
-            //asks user to input the name of the senator they wish to look up
+            //if they choose single, asks user to input the name of the senator they wish to look up
             if(s_or_m.equalsIgnoreCase("s")){
                 String sen_name;
                 System.out.println("What is the name of the senator you are searching for? ");
@@ -175,13 +189,13 @@ public class Main{
                         ArrayList<String> users_choices = new ArrayList<String>();
 
                         //outputs choice menu, user must choose what they would like to know
-                        //abput their desired senator
+                        //about their desired senator
                         String single_on = "Yes";
                         while(single_on.equalsIgnoreCase("Yes")){
                             System.out.printf("What would you like to know about Senator %s?\n", sen_name);
                             printMenu(menu);
 
-                            //user enters the number corresponding to their wanted choice,
+                            //user enters the number corresponding to their choice,
                             //code then shifts the number into the string it represents for the 
                             //if/else functions
                             System.out.println("Enter the number corresponding to your choice: ");
@@ -191,7 +205,7 @@ public class Main{
     
 
                             //whatever the user chooses, the information they will recieve is put
-                            //in a variable, which will be printed at the end of the code
+                            //in an arraylist which will be printed at the end of the code
 
                             //party is chosen, the senator's party will be added to output
                             if(str_choice.equals("Party")){
@@ -248,7 +262,7 @@ public class Main{
                             }else{
                                 System.out.println("Please choose a valid option.");
                             
-                            //at the end of the user's choice, that choice will be remived from the menu
+                            //at the end of the user's choice, that choice will be removed from the menu
                             }menu.remove(men_choice);
 
                             //beginning of output
@@ -258,14 +272,14 @@ public class Main{
                             //printing out user's senator's name
                             System.out.println("\n"+sen_name+ "\n");
 
-                            //the information they requested will now print through a new variable
+                            //the information they requested will now print to the terminal
                             String info[] = users_choices.toArray(new String[users_choices.size()]);
                             for(String choices_string : info){
                                 System.out.println(choices_string);
                             }if(menu.size()!= 0){
                                 System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
-                                //the program will now ask the user wether they would like to leave, or continue
+                                //the program will now ask the user whether they would like to leave, or continue
                                 //to gather info on this certain senator.
                                 System.out.printf("\nWould you like to add more information on Senator %s?", sen_name);
                                 System.out.println("\nEnter 'Yes' to add more or 'No' to exit");
@@ -277,7 +291,7 @@ public class Main{
                                 
 
                             //upon leaving the program, the user's information they gathered
-                            //will be put on a new text file for them to access
+                            //will be put in a new text file for them to access
                             }else{
                                 try{
                                     FileWriter fWriter = new FileWriter("senator_info.txt");
@@ -352,23 +366,25 @@ public class Main{
                                 //prints out a list of senators that are a member of the party user inputs
                                 System.out.println("The " + partyString + "s in the Senate are: ");
                                 for(Senator s : mysenators){
-                                    //runs through all senators in class to find matching with user inputed party
+                                    //checks if the senator is already in the user's list
                                     if(s.getParty().equals(partyString)){
                                         if(runningSenList.contains(s)==false){
 
-                                            //adds the narrowed down list into a personal list for user to retain
+                                            //adds the senator to the list if they are not already present
                                             runningSenList.add(s);
                                             
                                         }System.out.println(s.getName() + "\n" + "Party: " + s.getParty()); 
 
 
                                     }
-                                //program asks user if they would like to add to their list of senators,
-                                //if so they will be returned to the party menu
+                                //program asks user if they would like to add senators from another party
+                                
                                 }System.out.println("Would you like to add Senators from another party? ");
                                 System.out.println("Enter 'Yes' or 'No'");
                                 cont_party = keyboard.next();
-                            }break;    
+                                //if not, user is asked to choose another field
+                            }break; 
+                            //"Party" is removed from main menu
                         }menu.remove("Party");
                         
 
@@ -384,10 +400,12 @@ public class Main{
                           //prints out a list of senators representing desired state
                             System.out.println("The Senators from " + state_choice + " are: ");
                             for(Senator x : mysenators){
+                                
+                                //checks if senator is already in the user's list to avoid duplicates
                                 if(state_choice.equalsIgnoreCase(x.getState())){
                                     if(runningSenList.contains(x)==false){
 
-                                        //the list of senators are saved to a user-personal list to retain
+                                        //adds senator to list if not already present
                                         runningSenList.add(x);
                                     
                                     }System.out.println(x.getName() + "\n" + "State: " + x.getState());
@@ -419,17 +437,19 @@ public class Main{
                             System.out.println("The Senators from election class " + e_class + " are: ");
 
                             for(Senator y : mysenators){
+                                
+                                //checks if senator is already in the user's list
                                 if(e_class == y.get_elect_class()){
                                     if(runningSenList.contains(y)==false){
 
-                                        //add the current list to the personal user list
+                                        //adds the current senator to the personal user list if not alrady present
                                         runningSenList.add(y);
                                     }System.out.println(y.getName() + "\n" + "Class: " + y.get_elect_class());
 
 
                                 }
-                            //program asks user if theyd like to add more classes to the list, if yess
-                            //the userr will return to class menu
+                            //program asks user if they would like to add more classes to the list, if yes
+                            //the user will return to class menu
                             }System.out.println("Would you like to add Senators from another class?");
                             System.out.println("Enter 'Yes' or 'No'");
                             cont_class = keyboard.next();
@@ -443,15 +463,18 @@ public class Main{
                         //this list will be added to the user-personal list
                         for(Senator l : mysenators){
                             if(l.get_is_leader()){
+                                
+                                //checks if senator is already in user's list
                                 if(runningSenList.contains(l)==false){
 
-                                
+                                    //adds them if they are not already present
                                     runningSenList.add(l);
                                 }
 
                             }
-                        //then it will be printed the senators plus their position title
+                        //iterates through the Leadership class array to access the senator's position title
                         }for(Leadership leader_1 : myLeaders){
+                            //prints each senator and their position
                             System.out.println(leader_1.getName() + "\n" + "Position: " + leader_1.getPosition());
                         }menu.remove("Senate Leadership");
                       
@@ -459,12 +482,14 @@ public class Main{
                     }else if(menu_Choice.equals("Committee Chairpeople")){
                         System.out.println("The Senators who are committee chairs are: ");
                         
-                        //committee leader list will be added to the user-personal list
+                        //senators that are committee leaders will be added to the user-personal list
                         for(Senator c : mysenators){
                             if(c.get_is_chair()){
+                                
+                                //checks if senator is alreayd in user's list
                                 if(runningSenList.contains(c)==false){
 
-                                
+                                    //adds them if they are not already present
                                     runningSenList.add(c);
                                 }
                             }
@@ -474,12 +499,13 @@ public class Main{
                         }menu.remove("Committee Chairpeople");
                        
 
-                    // program will ask user after finishing their previous choice if they would like to 
-                    //narrow down their list using other choices
+                    //program will ask user after finishing their previous choice if they would like to 
+                    //narrow down their list using other choices. 
+                    //will only prompt for a response if there are still options in the main menu
                     }if(menu.size()!=0){                    
                         System.out.println("Would you like to add another field? Enter 'Yes' or 'No'");
 
-                        //if yess, they will return to the choice menu
+                        //if yes, they will return to the choice menu
                         continue_adding = keyboard.next();
                     }    
 
@@ -504,25 +530,33 @@ public class Main{
 
                 int sorting = keyboard.nextInt();
                 String sortingString = menu.get(sorting);
+                
+                //sorts list alphabetically by name then writes into text file
                 if(sortingString.equals("Name")){
                     Collections.sort(runningSenList, new sortByName());
                     writeInfo(runningSenList, myLeaders, myChairs);
-                    
+                 
+                //sorts list alphabetically by party then writes into text file
                 }else if(sortingString.equals("Party")){
                     Collections.sort(runningSenList, new sortByParty());
                     writeInfo(runningSenList, myLeaders, myChairs);
-                    
+                
+                //sorts alphabetically by state then writes into text file
                 }else if(sortingString.equals("State")){
                     Collections.sort(runningSenList, new sortByState());
                     writeInfo(runningSenList, myLeaders, myChairs);
-
+                    
+                //sorts numerically by class then writes into text file
                 }else if(sortingString.equals("Class")){
                     Collections.sort(runningSenList, new sortByClass());
                     writeInfo(runningSenList, myLeaders, myChairs);
+                    
+                //sorts by boolean leadership status
                 }else if(sortingString.equals("Senate Leadership")){
                     Collections.sort(runningSenList, new sortByLeader());
                     writeInfo(runningSenList, myLeaders, myChairs);
-
+                   
+                //sorts by boolean chair status
                 }else if(sortingString.equals("Commitee Chairpeople")){
                     Collections.sort(runningSenList, new sortByChair());
                     writeInfo(runningSenList, myLeaders, myChairs);
