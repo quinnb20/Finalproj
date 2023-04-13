@@ -90,7 +90,7 @@ public class Main{
 
         }
 
-    /**Write's the users information into a new text file. 
+    /**Writes the users information into a new text file. 
     * Takes a Senator ArrayList, Leadership ArrayList, and Chairperson ArrayList as parameters to write into the file
     */
     }public static void writeInfo(ArrayList<Senator> sen_list, ArrayList<Leadership> lead_list, ArrayList<Chairperson> chair_list){
