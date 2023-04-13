@@ -1,0 +1,101 @@
+
+Tammy Baldwin, Wisconsin, Democrat, 1, TRUE, FALSE
+John Barrasso, Wyoming, Republican, 1, TRUE, FALSE
+Michael F. Bennet, Colorado, Democrat, 3, FALSE, FALSE
+Marsha Blackburn, Tennessee, Republican, 1, FALSE, FALSE
+Richard Blumenthal, Connecticut, Democrat, 3, FALSE, FALSE
+Cory A. Booker, New Jersey, Democrat, 2, TRUE, FALSE
+John Boozman, Arkansas, Republican, 3, FALSE, FALSE
+Mike Braun, Indiana, Republican, 1, FALSE, FALSE
+Katie Boyd Britt, Alabama, Republican, 3, FALSE, FALSE
+Sherrod Brown, Ohio, Democrat, 1, FALSE, TRUE
+Ted Budd, North Carolina, Republican, 3, FALSE, FALSE
+Maria Cantwell, Washington, Democrat, 1, FALSE, TRUE
+Shelly Moore Capito, West Virginia, Republican, 2, TRUE, FALSE
+Benjamin L. Cardin, Maryland, Democrat, 2, FALSE, TRUE
+Thomas R. Carper, Delaware, Democrat, 1, FALSE, TRUE
+Robert P. Casey Jr., Pennsylvania, Democrat, 1, FALSE, TRUE
+Bill Cassidy, Louisiana, Republican, 2, FALSE, FALSE
+Susan M. Collins, Maine, Republican, 2, FALSE, FALSE
+Christopher A. Coons, Delaware, Democrat, 2, FALSE, TRUE
+John Cornyn, Texas, Republican, 2, FALSE, FALSE
+Catherine Cortez Masto, Nevada, Democrat, 3, TRUE, FALSE
+Tom Cotton, Arkansas, Republican, 2, FALSE, FALSE
+Kevin Cramer, North Dakota, Republican, 1, FALSE, FALSE
+Mike Crapo, Idaho, Republican, 3, FALSE, FALSE
+Ted Cruz, Texas, Republican, 1, FALSE, FALSE
+Steve Daines, Montana, Republican, 2, TRUE	, FALSE
+Tammy Duckworth, Illinois, Democrat, 3, FALSE, FALSE
+Richard J. Durbin, Illinois, Democrat, 2, TRUE, TRUE
+Joni Ernst, Iowa, Republican, 2, TRUE, FALSE
+Dianne Feinstein, California, Democrat, 1, FALSE, FALSE
+John Fetterman, Pennsylvania, Democrat, 3, FALSE, FALSE
+Deb Fischer, Nebraska, Republican, 1, FALSE, FALSE
+Kirsten E. Gillibrand, New York, Democrat, 1, FALSE, FALSE
+Lindsey Graham, South Carolina, Republican, 2, FALSE, FALSE
+Chuck Grassley, Iowa, Republican, 3, FALSE, FALSE
+Bill Hagerty, Tennessee, Republican, 2, FALSE, FALSE
+Margaret Wood Hassan, New Hampshire, Democrat, 3, FALSE, FALSE
+Josh Hawley, Missouri, Republican, 1, FALSE, FALSE
+Martin Heinrich, New Mexico, Democrat, 1, FALSE, TRUE
+John W. Hickenlooper, Colorado, Democrat, 2, FALSE, FALSE
+Mazie K. Hirono, Hawaii, Democrat, 1, FALSE, FALSE
+John Hoeven, North Dakota, Republican, 3, FALSE, FALSE
+Cindy Hyde-Smith, Mississippi, Republican, 2, FALSE, FALSE
+Ron Johnson, Wisconsin, Republican, 3, FALSE, FALSE
+Tim Kaine, Virginia, Democrat, 3, FALSE, FALSE
+Mark Kelly, Arizona, Democrat, 3, FALSE, FALSE
+John Kennedy, Louisiana, Republican, 3, FALSE, FALSE
+Angus S. King Jr., Maine, Independent, 1, FALSE, FALSE
+Amy Klobuchar, Minnesota, Democrat, 1, TRUE, TRUE
+James Lankford, Oklahoma, Republican, 3, FALSE, FALSE
+Mike Lee, Utah, Republican, 3, FALSE, FALSE
+Ben Ray Lujan, New Mexico, Democrat, 2, FALSE, FALSE
+Cynthia M. Lummis, Wyoming, Republican, 2, FALSE, FALSE
+Joe Manchin III, West Virginia, Democrat, 1, TRUE, TRUE
+Edward J. Markey, Massachusetts, Democrat, 2, FALSE, FALSE
+Roger Marshall, Kansas, Republican, 2, FALSE, FALSE
+Mitch McConnell, Kentucky, Republican, 2, TRUE, FALSE
+Robert Menendez, New Jersey, Democrat, 1, FALSE, TRUE
+Jeff Merkley, Oregon, Democrat, 2, FALSE, FALSE
+Jerry Moran, Kansas, Republican, 3, FALSE, FALSE
+Markwayne Mullin, Oklahoma, Republican, 2, FALSE, FALSE
+Lisa Murkowski, Alaska, Republican, 3, FALSE, FALSE
+Christopher Murphy, Connecticut, Democrat, 1, FALSE, FALSE
+Patty Murray, Washington, Democrat, 3, TRUE, TRUE
+John Ossoff, Georgia, Democrat, 2, FALSE, FALSE
+Alex Padilla, California, Democrat, 3, FALSE, FALSE
+Rand Paul, Kentucky, Republican, 3, FALSE, FALSE
+Gary C. Peters, Michigan, Democrat, 2, FALSE, TRUE
+Jack Reed, Rhode Island, Democrat, 2, FALSE, TRUE
+Pete Ricketts, Nebraska, Republican, 2, FALSE, FALSE
+James E. Risch, Idaho, Republican, 2, FALSE, FALSE
+Mitt Romney, Utah, Republican, 1, FALSE, FALSE
+Jacky Rosen, Nevada, Democrat, 1, FALSE, FALSE
+Mike Rounds, South Dakota, Republican, 2, FALSE, FALSE
+Marco Rubio, Florida, Republican, 3, FALSE, FALSE
+Bernard Sanders, Vermont, Independent, 1, TRUE, TRUE
+Brain Schatz, Hawaii, Democrat, 3, TRUE, TRUE
+Eric Schmitt, Missouri, Republican, 3, FALSE, FALSE
+Charles E. Schumer, New York, Democrat, 3, TRUE, FALSE
+Rick Scott, Florida, Republican, 1, FALSE, FALSE
+Tim Scott, South Carolina, Republican, 3, FALSE, FALSE
+Jeanne Shaheen, New Hampshire, Democrat, 2, FALSE, FALSE
+Kyrstem Sinema, Arizona, Independent, 1, FALSE, FALSE
+Tina Smith, Minnesota, Democrat, 2, FALSE, FALSE
+Debbie Stabenow, Michigan, Democrat, 1, TRUE, TRUE
+Dan Sullivan, Alaska, Republican, 2, FALSE, FALSE
+John Tester, Montana, Democrat, 1, FALSE, TRUE
+John Thune, South Dakota, Republican, 3, TRUE, FALSE
+Thom Tillis, North Carolina, Republican, 2, FALSE, FALSE
+Tommy Tuberville, Alabama, Republican, 2, FALSE, FALSE
+Chris Van Hollen, Maryland, Democrat, 3, FALSE, FALSE
+J. D. Vance, Ohio, Republican, 3, FALSE, FALSE
+Mark R. Warner, Virginia, Democrat, 2, TRUE, TRUE
+Raphael G. Warnock, Georgia, Democrat, 3, FALSE, FALSE
+Elizabeth Warren, Massachusetts, Democrat, 1, TRUE, FALSE
+Peter Welch, Vermont, Democrat, 3, FALSE, FALSE
+Sheldon Whitehouse, Rhode Island, Democrat, 1, FALSE, TRUE
+Roger F. Wicker, Mississippi, Republican, 1, FALSE, FALSE
+Ron Wyden, Oregon, Democrat, 3, FALSE, TRUE
+Todd Young, Indiana, Republican, 3, FALSE, FALSE
